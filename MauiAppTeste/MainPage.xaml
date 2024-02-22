@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppTeste.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Image
+                Source="delta.png"
+                HeightRequest="185"
+                Aspect="AspectFit"
+                SemanticProperties.Description="delta" />
+
+            <Label
+                Text="Equação de Segundo Grau"
+                TextColor="Black"
+                Padding="20"
+                Style="{StaticResource Headline}"
+                SemanticProperties.HeadingLevel="Level1" />
+
+            <Label Text=" Coeficiente A:"/>
+            <Entry x:Name="txt_coefA"/>
+            <Label Text=" Coeficiente B:"/>
+            <Entry x:Name="txt_coefB"/>
+            <Label Text=" Coeficiente C:"/>
+            <Entry x:Name="txt_coefC"/>
+
+            <Label
+               
+                Style="{StaticResource SubHeadline}"
+                SemanticProperties.HeadingLevel="Level2"
+                />
+
+            <Button
+                Text="Calcular" 
+                Clicked="Button_Clicked"
+                HorizontalOptions="Fill"
+                BackgroundColor=" blue"
+                />
+            <Button 
+                Text="Limpar"
+                Clicked="Button_Clicked_1"
+                HorizontalOptions="Fill"
+                BackgroundColor="green"
+                />
+                
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
